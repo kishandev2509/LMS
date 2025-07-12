@@ -1,26 +1,128 @@
-# Library_Management_System
-A simple and functional Library Management System Implemented in python 3 (Tkinter module)
-# Installation:
-1. Clone repository 
-2. Run 'main.py' on your project directory.
-3. Ensure all dependencies are installed
+# 📚 Library Management System
 
-# Usage:
-1. Issue Book
-2. Add Book
-3. Return Book
-4. Remove Book
-5. Search Book
-6. Add User
-7. Remove User
-8. Add Student
-9. Remove Student
-10. Search Student
+A **Desktop-based Library Management System** built using **Python 3** and **Tkinter GUI framework**, backed with **SQLite3 database** for seamless data storage and retrieval. This application is designed to manage a college/school library with functionality for book, student, and user management.
 
-# Brief Introduction
+---
 
-A student can issue a book for 5 days.After that the student have to return the book, If the student didn't renew the book within the return date the student have to pay fine @ Rs 10/day.A student can take a maximum of 3 books......
+## 🗈️ Project Demo
 
-# IMPORTANT
+> GUI-based app with multi-user support, role-based user management, and visually rich student records including profile images.
 
-After installing create a folder with name Temp Images on the same folder and add the 48-512.png image on it..
+---
+
+## 📂 Directory Structure
+
+```
+kishandev2509-lms/
+├── main.py                # Entry point
+├── db.py                  # DB setup and schema creation
+├── *.py                   # Feature modules (issue, return, add, search etc.)
+├── library_administration.db  # SQLite DB
+└── README.md              # Project documentation
+```
+
+---
+
+## 🚀 Features
+
+### 📕 Book Management
+
+* Add a book with ID, name, and author
+* Issue book to students
+* Return or reissue a book
+* Remove a book
+* Check availability
+
+### 🎓 Student Management
+
+* Add student with full details and profile picture
+* Remove student records
+* Search students by name or registration number
+* Fine management based on return delays
+
+### 👤 User/Admin Management
+
+* Add/remove library administrators
+* Secure login system with password reset via security questions
+* Fine clearance module for administrators
+
+### 🔍 Search Capabilities
+
+* Search books by ID, name, or author
+* Search students with dynamic filters
+
+---
+
+## 🛠️ Technologies Used
+
+| Tool/Library  | Purpose                          |
+| ------------- | -------------------------------- |
+| Python 3      | Core programming language        |
+| Tkinter       | GUI design                       |
+| SQLite3       | Local lightweight database       |
+| PIL / ImageTk | Profile image display (optional) |
+| OS / Glob     | File and image management        |
+
+---
+
+## 💾 Installation & Setup
+
+1. **Clone the Repository**
+
+   ```bash
+   git clone https://github.com/kishandev2509/LMS.git
+   cd LMS
+   ```
+
+2. **Install Requirements**
+   No external packages needed if you're using standard Python installation with Tkinter and sqlite3 support.
+   However, to ensure GUI image support, install PIL:
+
+   ```bash
+   pip install pillow
+   ```
+
+3. **Run the App**
+
+   ```bash
+   python main.py
+   ```
+
+4. **Important: Initial Setup**
+
+   * On first run, you'll be prompted to register an admin user.
+   * A `library_administration.db` file will be created to store data.
+
+5. **Important Notes**
+
+   * Create a folder named **`Temp Images`** in the project root.
+   * Add a file named **`48-512.png`** to be used as default student image if no profile is uploaded.
+
+---
+
+<!-- 
+## 📸 Screenshots (Optional)
+
+> *Add GUI screenshots here to show the dashboard, add book/student dialogs, etc.*
+
+--- -->
+
+## 📝 Future Enhancements
+
+* ✅ Reissue book with fine auto-adjustment (some parts under dev)
+* 🔒 Role-based authentication (admin vs. operator)
+* 🌐 Web-based interface (Django/Flask)
+
+---
+
+## 👨‍💻 Author
+
+> **Kishan Dev**
+> GitHub: [kishandev2509](https://github.com/kishandev2509)
+> Email: [kishan.dev@example.com](mailto:kishan.dev@example.com)
+
+---
+
+<!-- ## 📃 License
+
+This project is licensed under the [MIT License](LICENSE). -->
